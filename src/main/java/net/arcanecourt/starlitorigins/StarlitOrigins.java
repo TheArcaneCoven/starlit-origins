@@ -1,6 +1,11 @@
 package net.arcanecourt.starlitorigins;
 
 import com.mojang.logging.LogUtils;
+import net.arcanecourt.starlitorigins.block.ModBlocks;
+import net.arcanecourt.starlitorigins.item.ModCreativeTabs;
+import net.arcanecourt.starlitorigins.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,6 +32,10 @@ public class StarlitOrigins
     public StarlitOrigins(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

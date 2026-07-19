@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "starlit_origins:item/powdered_gold"
+  }
+}

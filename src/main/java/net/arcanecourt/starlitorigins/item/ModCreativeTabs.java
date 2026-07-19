@@ -18,18 +18,19 @@ public class ModCreativeTabs {
             .icon(() -> new ItemStack(ModItems.AMETHYST_ON_A_STICK.get()))
             .title(Component.translatable("creativetab.starlit_origins_items"))
             .displayItems((itemDisplayParameters, output) -> {
-                output.accept(ModItems.SCULK_PASTE.get());
-
+                output.accept(ModItems.ELDRITCH_STEW.get());
                 output.accept(ModItems.SCULKED_BREAD.get());
                 output.accept(ModItems.SCULKED_MEAT.get());
-                output.accept(ModItems.ELDRITCH_STEW.get());
+                output.accept(ModItems.SCULK_PASTE.get());
 
                 output.accept(ModItems.POWDERED_DIAMOND.get());
                 output.accept(ModItems.POWDERED_EMERALD.get());
                 output.accept(ModItems.POWDERED_GOLD.get());
                 output.accept(ModItems.POWDERED_LAPIS.get());
-                output.accept(ModItems.CINDER_INFUSED_COAL.get());
+                output.accept(ModItems.SMALL_GEODE.get());
                 output.accept(ModItems.AMETHYST_ON_A_STICK.get());
+
+                output.accept(ModItems.CINDER_INFUSED_COAL.get());
             })
             .build());
 

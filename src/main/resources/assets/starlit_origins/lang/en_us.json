@@ -10,6 +10,9 @@
   "item.starlit_origins.powdered_lapis": "Powdered Lapis-Lazuli",
   "item.starlit_origins.cinder_infused_coal": "Cinder-Infused Coal",
   "item.starlit_origins.amethyst_on_a_stick": "Amethyst on a Stick",
+  "item.starlit_origins.small_geode": "Small Geode",
 
-  "creativetab.starlit_origins_items": "Starlit Origins: Items"
+  "creativetab.starlit_origins_items": "Starlit Origins: Items",
+
+  "tooltip.starlit_origins.small_geode": "§7What could this possibly contain?"
 }

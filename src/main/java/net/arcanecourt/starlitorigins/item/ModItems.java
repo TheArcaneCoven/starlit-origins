@@ -1,5 +1,8 @@
 package net.arcanecourt.starlitorigins.item;
 import net.arcanecourt.starlitorigins.StarlitOrigins;
+import net.arcanecourt.starlitorigins.item.advanced.SmallGeodeItem;
+import net.minecraft.client.gui.components.Tooltip;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,6 +18,7 @@ public class ModItems {
     public static final RegistryObject<Item> POWDERED_EMERALD = ITEMS.register("powdered_emerald",() -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POWDERED_GOLD = ITEMS.register("powdered_gold",() -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POWDERED_LAPIS = ITEMS.register("powdered_lapis",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SMALL_GEODE = ITEMS.register("small_geode", ()  -> new SmallGeodeItem(new Item.Properties()));
 
     //Food items
     public static final RegistryObject<Item> SCULKED_BREAD = ITEMS.register("sculked_bread",() -> new Item(new Item.Properties().food(ModFoods.SCULKED_BREAD)));

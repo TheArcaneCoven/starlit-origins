@@ -87,8 +87,4 @@ public class StarlitOrigins
         {
         }
     }
-
-    public static ResourceLocation id(@NotNull String path) {
-        return ResourceLocation.fromNamespaceAndPath(StarlitOrigins.MOD_ID, path);
-    }
 }

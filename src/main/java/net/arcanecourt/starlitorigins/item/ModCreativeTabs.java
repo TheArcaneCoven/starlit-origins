@@ -28,7 +28,17 @@ public class ModCreativeTabs {
                 output.accept(ModItems.POWDERED_GOLD.get());
                 output.accept(ModItems.POWDERED_LAPIS.get());
                 output.accept(ModItems.SMALL_GEODE.get());
+                output.accept(ModItems.SMALL_GEODE_NETHERRACK.get());
+                output.accept(ModItems.SMALL_GEODE_CRACKED.get());
+                output.accept(ModItems.SMALL_GEODE_CRACKED_NETHERRACK.get());
+                output.accept(ModItems.AMETHYST_TEA.get());
+                output.accept(ModItems.CITRINE_TEA.get());
                 output.accept(ModItems.AMETHYST_ON_A_STICK.get());
+                output.accept(ModItems.RAW_EMERALD_GINGERBREAD.get());
+                output.accept(ModItems.BAKED_EMERALD_GINGERBREAD.get());
+                output.accept(ModItems.LITHOSPHERIAN_SALAD.get());
+                output.accept(ModItems.BLESSED_MIXTURE.get());
+                output.accept(ModItems.ARCANE_MIXTURE.get());
 
                 output.accept(ModItems.CINDER_INFUSED_COAL.get());
             })

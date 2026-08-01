@@ -10,9 +10,25 @@
   "item.starlit_origins.powdered_lapis": "Powdered Lapis-Lazuli",
   "item.starlit_origins.cinder_infused_coal": "Cinder-Infused Coal",
   "item.starlit_origins.amethyst_on_a_stick": "Amethyst on a Stick",
+  "item.starlit_origins.amethyst_tea": "Ameteast",
+  "item.starlit_origins.citrine_tea": "Citeane",
+  "item.starlit_origins.raw_emerald_gingerbread": "Raw Emerald Gingerbread",
+  "item.starlit_origins.baked_emerald_gingerbread": "Baked Emerald Gingerbread",
+  "item.starlit_origins.lithospherian_salad": "Lithospherian Salad",
+  "item.starlit_origins.blessed_mixture": "Blessed Mixture",
+  "item.starlit_origins.arcane_mixture": "Arcane Mixture",
+
+
   "item.starlit_origins.small_geode": "Small Geode",
+  "item.starlit_origins.small_geode_netherrack": "Small Geode",
+  "item.starlit_origins.small_geode_cracked": "Cracked Small Amethyst Geode",
+  "item.starlit_origins.small_geode_cracked_netherrack": "Cracked Small Citrine Geode",
 
   "creativetab.starlit_origins_items": "Starlit Origins: Items",
 
-  "tooltip.starlit_origins.small_geode": "§7What could this possibly contain?"
+  "tooltip.starlit_origins.small_geode": "§7What could this possibly contain?",
+  "tooltip.starlit_origins.tea_puns": "§7Don't mind the pun.",
+
+  "effect.starlit_origins.fury": "Fury",
+  "effect.starlit_origins.magic_imbuement": "Magic Imbuement"
 }

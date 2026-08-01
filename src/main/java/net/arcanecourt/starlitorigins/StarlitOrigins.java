@@ -1,11 +1,12 @@
 package net.arcanecourt.starlitorigins;
 
 import com.mojang.logging.LogUtils;
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.arcanecourt.starlitorigins.block.ModBlocks;
+import net.arcanecourt.starlitorigins.effect.ModEffects;
 import net.arcanecourt.starlitorigins.item.ModCreativeTabs;
 import net.arcanecourt.starlitorigins.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -19,6 +20,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 @Mod(StarlitOrigins.MOD_ID)
@@ -36,6 +38,8 @@ public class StarlitOrigins
         ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
+        AttributeRegistry.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -82,5 +86,9 @@ public class StarlitOrigins
         public static void onClientSetup(FMLClientSetupEvent event)
         {
         }
+    }
+
+    public static ResourceLocation id(@NotNull String path) {
+        return ResourceLocation.fromNamespaceAndPath(StarlitOrigins.MOD_ID, path);
     }
 }

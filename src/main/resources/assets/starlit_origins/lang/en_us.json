@@ -22,6 +22,13 @@
   "item.starlit_origins.miner_stew": "Miner's Stew",
   "item.starlit_origins.gold_coated_calcite_egg": "Gold-Coated Calcite Egg",
   "item.starlit_origins.boiled_gold_coated_calcite_egg": "Boiled Gold-Coated Calcite Egg",
+  "item.starlit_origins.silver_ingot": "Silver Ingot",
+  "item.starlit_origins.raw_silver": "Raw Silver",
+  "item.starlit_origins.silver_sword": "Silver Sword",
+  "item.starlit_origins.silver_pickaxe": "Silver Pickaxe",
+  "item.starlit_origins.silver_axe": "Silver Axe",
+  "item.starlit_origins.silver_shovel": "Silver Shovel",
+  "item.starlit_origins.silver_hoe": "Silver Hoe",
 
 
   "item.starlit_origins.small_geode": "Small Geode",
@@ -39,5 +46,6 @@
   "effect.starlit_origins.magic_imbuement": "Magic Imbuement",
 
   "block.starlit_origins.suspicious_deepslate": "Suspicious Deepslate",
-  "block.starlit_origins.suspicious_netherrack": "Suspicious Netherrack"
+  "block.starlit_origins.suspicious_netherrack": "Suspicious Netherrack",
+  "block.starlit_origins.silver_ore": "Silver Ore"
 }

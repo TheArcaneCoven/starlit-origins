@@ -1,11 +1,12 @@
 package net.arcanecourt.starlitorigins.item;
+import net.arcanecourt.starlitorigins.ModToolTiers;
 import net.arcanecourt.starlitorigins.StarlitOrigins;
 import net.arcanecourt.starlitorigins.item.advanced.SculkIngredientItem;
 import net.arcanecourt.starlitorigins.item.advanced.SmallGeodeItem;
 import net.arcanecourt.starlitorigins.item.advanced.TeaItem;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -56,6 +57,17 @@ public class ModItems {
     public static final RegistryObject<Item> IGNITED_ICON = ITEMS.register("ignited_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> VAMPIRE_ICON = ITEMS.register("vampire_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> VOIDKIN_ICON = ITEMS.register("voidkin_icon", () -> new Item(new Item.Properties()));
+
+    // Misc
+    public static final RegistryObject<Item> RAW_SILVER =  ITEMS.register("raw_silver", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_INGOT =  ITEMS.register("silver_ingot", () -> new Item(new Item.Properties()));
+
+    // Tools
+    public static final RegistryObject<Item> SILVER_SWORD =  ITEMS.register("silver_sword", () -> new SwordItem(ModToolTiers.SILVER, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_PICKAXE =  ITEMS.register("silver_pickaxe", () -> new PickaxeItem(ModToolTiers.SILVER, 1, -2.8f, new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_AXE =  ITEMS.register("silver_axe", () -> new AxeItem(ModToolTiers.SILVER, 6, -3.1f, new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_SHOVEL =  ITEMS.register("silver_shovel", () -> new ShovelItem(ModToolTiers.SILVER, 1.5f, -3.0f, new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_HOE =  ITEMS.register("silver_hoe", () -> new HoeItem(ModToolTiers.SILVER, -2, -1.0f, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

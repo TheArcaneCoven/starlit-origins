@@ -20,6 +20,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SUSPICIOUS_DEEPSLATE = registerBlock("suspicious_deepslate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
     public static final RegistryObject<Block> SUSPICIOUS_NETHERRACK = registerBlock("suspicious_netherrack", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -49,6 +49,15 @@ public class ModCreativeTabs {
                 output.accept(ModItems.MINER_STEW.get());
 
                 output.accept(ModItems.CINDER_INFUSED_COAL.get());
+
+                output.accept(ModBlocks.SILVER_ORE.get());
+                output.accept(ModItems.RAW_SILVER.get());
+                output.accept(ModItems.SILVER_INGOT.get());
+                output.accept(ModItems.SILVER_SWORD.get());
+                output.accept(ModItems.SILVER_PICKAXE.get());
+                output.accept(ModItems.SILVER_SHOVEL.get());
+                output.accept(ModItems.SILVER_HOE.get());
+                output.accept(ModItems.SILVER_AXE.get());
             })
             .build());
 

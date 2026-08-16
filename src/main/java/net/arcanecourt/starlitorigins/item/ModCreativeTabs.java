@@ -19,8 +19,8 @@ public class ModCreativeTabs {
             .title(Component.translatable("creativetab.starlit_origins_items"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.ELDRITCH_STEW.get());
-                output.accept(ModItems.SCULKED_BREAD.get());
-                output.accept(ModItems.SCULKED_MEAT.get());
+                output.accept(ModItems.RAW_SENSOR_TENDRIL.get());
+                output.accept(ModItems.COOKED_SENSOR_TENDRIL.get());
                 output.accept(ModItems.SCULK_PASTE.get());
 
                 output.accept(ModItems.POWDERED_DIAMOND.get());

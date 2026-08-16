@@ -9,8 +9,6 @@ import static vectorwing.farmersdelight.common.FoodValues.nourishment;
 
 public class ModFoods {
     // Sculky foods!
-    public static final FoodProperties SCULKED_BREAD = new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build();
-    public static final FoodProperties SCULKED_MEAT = new FoodProperties.Builder().nutrition(6).saturationMod(0.6f).build();
     public static final FoodProperties ELDRITCH_STEW = (new FoodProperties.Builder()).nutrition(8).saturationMod(1.2f)
             .effect(() -> nourishment(2400), 1.0f).effect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 2,false,false,true), 1.0f)
             .build();

@@ -1,8 +1,9 @@
 {
   "item.starlit_origins.sculk_paste": "Sculk Paste",
-  "item.starlit_origins.sculked_bread": "Sculked Bread",
-  "item.starlit_origins.sculked_meat": "Sculked Meat",
   "item.starlit_origins.eldritch_stew": "Eldritch Stew",
+  "item.starlit_origins.raw_sensor_tendril": "Raw Sculk Sensor Tendril",
+  "item.starlit_origins.cooked_sensor_tendril": "Cooked Sculk Sensor Tendril",
+
 
   "item.starlit_origins.powdered_diamond": "Powdered Diamond",
   "item.starlit_origins.powdered_emerald": "Powdered Emerald",

@@ -6,6 +6,7 @@ import net.arcanecourt.starlitorigins.item.advanced.SmallGeodeItem;
 import net.arcanecourt.starlitorigins.item.advanced.TeaItem;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -29,8 +30,8 @@ public class ModItems {
 
 
     //Food items
-    public static final RegistryObject<Item> SCULKED_BREAD = ITEMS.register("sculked_bread",() -> new SculkIngredientItem(new Item.Properties().food(ModFoods.SCULKED_BREAD)));
-    public static final RegistryObject<Item> SCULKED_MEAT = ITEMS.register("sculked_meat",() -> new SculkIngredientItem(new Item.Properties().food(ModFoods.SCULKED_MEAT)));
+    public static final RegistryObject<Item> RAW_SENSOR_TENDRIL = ITEMS.register("raw_sensor_tendril", ()  -> new Item(new Item.Properties().food(Foods.POTATO)));
+    public static final RegistryObject<Item> COOKED_SENSOR_TENDRIL = ITEMS.register("cooked_sensor_tendril", ()  -> new Item(new Item.Properties().food(Foods.BAKED_POTATO)));
     public static final RegistryObject<Item> ELDRITCH_STEW = ITEMS.register("eldritch_stew",() -> new Item(new Item.Properties().food(ModFoods.ELDRITCH_STEW)));
     public static final RegistryObject<Item> CINDER_INFUSED_COAL = ITEMS.register("cinder_infused_coal", ()  -> new Item(new Item.Properties().food(ModFoods.CINDER_INFUSED_COAL)));
     public static final RegistryObject<Item> AMETHYST_ON_A_STICK = ITEMS.register("amethyst_on_a_stick", ()  -> new Item(new Item.Properties().food(ModFoods.AMETHYST_ON_A_STICK)));

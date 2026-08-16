@@ -38,14 +38,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_CORDON_BLEU);
         simpleItem(ModItems.RAW_EMERALD_GINGERBREAD);
         simpleItem(ModItems.SCULK_PASTE);
-        simpleItem(ModItems.SCULKED_BREAD);
-        simpleItem(ModItems.SCULKED_MEAT);
         simpleItem(ModItems.SMALL_GEODE);
         simpleItem(ModItems.SMALL_GEODE_CRACKED);
         simpleItem(ModItems.SMALL_GEODE_NETHERRACK);
         simpleItem(ModItems.SMALL_GEODE_CRACKED_NETHERRACK);
         simpleItem(ModItems.SILVER_INGOT);
         simpleItem(ModItems.RAW_SILVER);
+        simpleItem(ModItems.RAW_SENSOR_TENDRIL);
+        simpleItem(ModItems.COOKED_SENSOR_TENDRIL);
 
         handheldItem(ModItems.SILVER_SWORD);
         handheldItem(ModItems.SILVER_AXE);

@@ -1,17 +1,16 @@
 package net.arcanecourt.starlitorigins.item;
 import net.arcanecourt.starlitorigins.ModToolTiers;
 import net.arcanecourt.starlitorigins.StarlitOrigins;
-import net.arcanecourt.starlitorigins.item.advanced.SculkIngredientItem;
+import net.arcanecourt.starlitorigins.item.advanced.SculkDrinkItem;
 import net.arcanecourt.starlitorigins.item.advanced.SmallGeodeItem;
 import net.arcanecourt.starlitorigins.item.advanced.TeaItem;
-import net.minecraft.client.gui.components.Tooltip;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.common.FoodValues;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, StarlitOrigins.MOD_ID);
@@ -28,8 +27,11 @@ public class ModItems {
     public static final RegistryObject<Item> SMALL_GEODE_CRACKED_NETHERRACK = ITEMS.register("small_geode_cracked_netherrack", ()  -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOLD_COATED_CALCITE_EGG = ITEMS.register("gold_coated_calcite_egg", ()  -> new Item(new Item.Properties()));
 
-
     //Food items
+    public static final RegistryObject<Item> FUNGAL_BROCHETTE = ITEMS.register("fungal_brochette", ()  -> new Item(new Item.Properties().food(FoodValues.BARBECUE_STICK)));
+    public static final RegistryObject<Item> TIMELESS_ALE = ITEMS.register("timeless_ale", () -> new SculkDrinkItem(new Item.Properties().food(ModFoods.TIMELESS_ALE)));
+    public static final RegistryObject<Item> DARK_TEA = ITEMS.register("dark_tea", () -> new SculkDrinkItem(new Item.Properties().food(ModFoods.DARK_TEA)));
+    public static final RegistryObject<Item> OVERTAKEN_BERRY_MIX = ITEMS.register("overtaken_berry_mix", ()  -> new Item(new Item.Properties().food(FoodValues.FRUIT_SALAD)));
     public static final RegistryObject<Item> RAW_SENSOR_TENDRIL = ITEMS.register("raw_sensor_tendril", ()  -> new Item(new Item.Properties().food(Foods.POTATO)));
     public static final RegistryObject<Item> COOKED_SENSOR_TENDRIL = ITEMS.register("cooked_sensor_tendril", ()  -> new Item(new Item.Properties().food(Foods.BAKED_POTATO)));
     public static final RegistryObject<Item> ELDRITCH_STEW = ITEMS.register("eldritch_stew",() -> new Item(new Item.Properties().food(ModFoods.ELDRITCH_STEW)));

@@ -7,21 +7,30 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+@Mod.EventBusSubscriber(modid = StarlitOrigins.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, StarlitOrigins.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, StarlitOrigins.MOD_ID);
+
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
 
     public static final RegistryObject<CreativeModeTab> STARLIT_ORIGINS_ITEMS = CREATIVE_MODE_TABS.register("starlit_origins_items", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(ModItems.AMETHYST_ON_A_STICK.get()))
             .title(Component.translatable("creativetab.starlit_origins_items"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.ELDRITCH_STEW.get());
+                output.accept(ModItems.OVERTAKEN_BERRY_MIX.get());
+                output.accept(ModItems.FUNGAL_BROCHETTE.get());
                 output.accept(ModItems.RAW_SENSOR_TENDRIL.get());
                 output.accept(ModItems.COOKED_SENSOR_TENDRIL.get());
                 output.accept(ModItems.SCULK_PASTE.get());
+                output.accept(ModItems.TIMELESS_ALE.get());
+                output.accept(ModItems.DARK_TEA.get());
 
                 output.accept(ModItems.POWDERED_DIAMOND.get());
                 output.accept(ModItems.POWDERED_EMERALD.get());
@@ -61,7 +70,4 @@ public class ModCreativeTabs {
             })
             .build());
 
-    public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
 }

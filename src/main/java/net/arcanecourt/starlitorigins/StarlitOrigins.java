@@ -35,11 +35,7 @@ public class StarlitOrigins
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        ModCreativeTabs.register(modEventBus);
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
-        ModEffects.register(modEventBus);
-        AttributeRegistry.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
@@ -48,6 +44,12 @@ public class StarlitOrigins
 
 
         modEventBus.addListener(this::addCreative);
+
+        ModCreativeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
+        AttributeRegistry.register(modEventBus);
 
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

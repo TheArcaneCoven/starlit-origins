@@ -19,6 +19,8 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> IS_SILVER = tag("is_silver");
+        public static final TagKey<Item> IS_SCULK_FOOD = tag("is_sculk_food");
+        public static final TagKey<Item> POWDERED_ORES = tag("powdered_ores");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(StarlitOrigins.MOD_ID, name));

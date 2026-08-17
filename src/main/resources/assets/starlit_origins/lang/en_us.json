@@ -3,6 +3,10 @@
   "item.starlit_origins.eldritch_stew": "Eldritch Stew",
   "item.starlit_origins.raw_sensor_tendril": "Raw Sculk Sensor Tendril",
   "item.starlit_origins.cooked_sensor_tendril": "Cooked Sculk Sensor Tendril",
+  "item.starlit_origins.fungal_brochette": "Fungal Brochette",
+  "item.starlit_origins.overtaken_berry_mix": "Overtaken Berry Mix",
+  "item.starlit_origins.timeless_ale": "Timeless Ale",
+  "item.starlit_origins.dark_tea": "Dark Tea",
 
 
   "item.starlit_origins.powdered_diamond": "Powdered Diamond",
@@ -41,10 +45,10 @@
 
   "tooltip.starlit_origins.small_geode": "§7Looks like there could be something shiny inside!",
   "tooltip.starlit_origins.tea_puns": "§7Ignore the pun",
-  "tooltip.starlit_origins.sculk_ingredient": "§7Useless and poisonous for the average person, though might be an interesting ingredient for some non-human creatures.",
+  "tooltip.starlit_origins.sculk_drink": "§7Probably extremely toxic for the average creature, though it may have interesting properties for a few species.",
 
-  "effect.starlit_origins.fury": "Fury",
   "effect.starlit_origins.magic_imbuement": "Magic Imbuement",
+  "effect.starlit_origins.casters_strength": "Caster's Strength",
 
   "block.starlit_origins.suspicious_deepslate": "Suspicious Deepslate",
   "block.starlit_origins.suspicious_netherrack": "Suspicious Netherrack",

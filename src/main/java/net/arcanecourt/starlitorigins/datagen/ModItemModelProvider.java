@@ -46,6 +46,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_SILVER);
         simpleItem(ModItems.RAW_SENSOR_TENDRIL);
         simpleItem(ModItems.COOKED_SENSOR_TENDRIL);
+        simpleItem(ModItems.FUNGAL_BROCHETTE);
+        simpleItem(ModItems.OVERTAKEN_BERRY_MIX);
+        simpleItem(ModItems.TIMELESS_ALE);
+        simpleItem(ModItems.DARK_TEA);
 
         handheldItem(ModItems.SILVER_SWORD);
         handheldItem(ModItems.SILVER_AXE);

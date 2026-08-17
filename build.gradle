@@ -225,6 +225,7 @@ dependencies {
 
     // Origins
     implementation fg.deobf("curse.maven:origins-391943:7149659")
+
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

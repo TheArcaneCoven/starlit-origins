@@ -60,6 +60,8 @@ public class ModItems {
     public static final RegistryObject<Item> IGNITED_ICON = ITEMS.register("ignited_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> VAMPIRE_ICON = ITEMS.register("vampire_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> VOIDKIN_ICON = ITEMS.register("voidkin_icon", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GOBLIN_ICON = ITEMS.register("goblin_icon", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> VOID_ELF_ICON = ITEMS.register("void_elf_icon", () -> new Item(new Item.Properties()));
 
     // Misc
     public static final RegistryObject<Item> RAW_SILVER =  ITEMS.register("raw_silver", () -> new Item(new Item.Properties()));

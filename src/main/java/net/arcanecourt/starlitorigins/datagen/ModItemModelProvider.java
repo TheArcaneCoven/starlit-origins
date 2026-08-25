@@ -56,6 +56,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SILVER_HOE);
         handheldItem(ModItems.SILVER_PICKAXE);
         handheldItem(ModItems.SILVER_SHOVEL);
+
+        simpleItem(ModItems.VOIDKIN_ICON);
+        simpleItem(ModItems.ICE_DRAGONBORN_ICON);
+        simpleItem(ModItems.IGNITED_ICON);
+        simpleItem(ModItems.FIRE_DRAGONBORN_ICON);
+        simpleItem(ModItems.NECRODARIAN_ICON);
+        simpleItem(ModItems.FOREST_DRAGONBORN_ICON);
+        simpleItem(ModItems.LIGHTNING_DRAGONBORN_ICON);
+        simpleItem(ModItems.WEREWOLF_ICON);
+        simpleItem(ModItems.WATER_DRAGONBORN_ICON);
+        simpleItem(ModItems.VAMPIRE_ICON);
+        simpleItem(ModItems.GOBLIN_ICON);
+        simpleItem(ModItems.VOID_ELF_ICON);
     }
 
 

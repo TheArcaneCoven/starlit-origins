@@ -23,6 +23,9 @@ public class ModEffects {
     public static final RegistryObject<MobEffect> CASTERS_STRENGTH = MOB_EFFECTS.register("casters_strength", () -> new ModMobEffects(MobEffectCategory.BENEFICIAL, 69236255)
             .addAttributeModifier(AttributeRegistry.SPELL_POWER.get(), "a878be2f-e02f-44f8-a223-f05ed37dd51a", 0.05f, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
+    public static final RegistryObject<MobEffect> VOIDKIN_VENOM = MOB_EFFECTS.register("voidkin_venom", () -> new ModMobEffects(MobEffectCategory.HARMFUL, 1936)
+            .addAttributeModifier(AttributeRegistry.ELDRITCH_MAGIC_RESIST.get(), "f332885e-ddcc-4414-8dd5-48e080c5d9de", -0.15f, AttributeModifier.Operation.MULTIPLY_TOTAL));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

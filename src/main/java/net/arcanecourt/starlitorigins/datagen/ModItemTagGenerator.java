@@ -33,6 +33,19 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.POWDERED_GOLD.get(),
                         ModItems.POWDERED_EMERALD.get());
 
+        this.tag(ModTags.Items.IS_MINERAL_FOOD)
+                .add(ModItems.AMETHYST_ON_A_STICK.get(),
+                        ModItems.ARCANE_MIXTURE.get(),
+                        ModItems.BAKED_EMERALD_GINGERBREAD.get(),
+                        ModItems.BLESSED_MIXTURE.get(),
+                        ModItems.CINDER_INFUSED_COAL.get(),
+                        ModItems.BOILED_GOLD_COATED_CALCITE_EGG.get(),
+                        ModItems.COOKED_CORDON_BLEU.get(),
+                        ModItems.LITHOSPHERIAN_SALAD.get(),
+                        ModItems.MINER_STEW.get(),
+                        ModItems.RAW_CORDON_BLEU.get(),
+                        ModItems.RAW_EMERALD_GINGERBREAD.get()
+                );
     }
 
 }

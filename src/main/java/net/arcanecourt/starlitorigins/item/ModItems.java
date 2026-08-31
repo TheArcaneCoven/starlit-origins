@@ -48,6 +48,12 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_CORDON_BLEU = ITEMS.register("cooked_cordon_bleu", () -> new Item(new Item.Properties().food(ModFoods.COOKED_CORDON_BLEU)));
     public static final RegistryObject<Item> MINER_STEW = ITEMS.register("miner_stew",  () -> new Item(new Item.Properties().food(ModFoods.MINER_STEW).food(ModFoods.MINER_STEW)));
     public static final RegistryObject<Item> BOILED_GOLD_COATED_CALCITE_EGG = ITEMS.register("boiled_gold_coated_calcite_egg", ()  -> new Item(new Item.Properties().food(ModFoods.BOILED_GOLD_COATED_CALCITE_EGG)));
+    public static final RegistryObject<Item> CHARRED_MEAT = ITEMS.register("charred_meat", ()  -> new Item(new Item.Properties().food(Foods.COOKED_BEEF)));
+    public static final RegistryObject<Item> CHARRED_VEGETABLE = ITEMS.register("charred_vegetable", ()  -> new Item(new Item.Properties().food(Foods.BAKED_POTATO)));
+    public static final RegistryObject<Item> CHARRED_FISH = ITEMS.register("charred_fish", ()  -> new Item(new Item.Properties().food(Foods.COOKED_SALMON)));
+
+
+
 
     //Origin icons
     public static final RegistryObject<Item> FIRE_DRAGONBORN_ICON = ITEMS.register("fire_dragonborn_icon", () -> new Item(new Item.Properties()));

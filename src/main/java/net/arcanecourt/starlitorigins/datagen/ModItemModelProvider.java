@@ -69,6 +69,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.VAMPIRE_ICON);
         simpleItem(ModItems.GOBLIN_ICON);
         simpleItem(ModItems.VOID_ELF_ICON);
+        simpleItem(ModItems.CHARRED_MEAT);
+        simpleItem(ModItems.CHARRED_VEGETABLE);
+        simpleItem(ModItems.CHARRED_FISH);
     }
 
 

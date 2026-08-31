@@ -6,6 +6,8 @@ import net.arcanecourt.starlitorigins.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -46,6 +48,38 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.RAW_CORDON_BLEU.get(),
                         ModItems.RAW_EMERALD_GINGERBREAD.get()
                 );
+
+        this.tag(ModTags.Items.CHARREABLE_VEGETABLES)
+                .add(Items.CARROT,
+                        Items.BAKED_POTATO,
+                        Items.BEETROOT,
+                        Items.DRIED_KELP,
+                        Items.CARROT,
+                        Items.CRIMSON_FUNGUS,
+                        Items.WARPED_FUNGUS,
+                        vectorwing.farmersdelight.common.registry.ModItems.CABBAGE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.TOMATO.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.ONION.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get()
+                        );
+
+        this.tag(ModTags.Items.CHARREABLE_MEATS)
+                .add(
+                        Items.COOKED_BEEF,
+                        Items.COOKED_CHICKEN,
+                        Items.COOKED_MUTTON,
+                        Items.COOKED_PORKCHOP,
+                        Items.COOKED_RABBIT,
+                        vectorwing.farmersdelight.common.registry.ModItems.SMOKED_HAM.get()
+                );
+
+        this.tag(ModTags.Items.CHARREABLE_FISH)
+                .add(
+                        Items.COOKED_COD,
+                        Items.COOKED_SALMON
+                );
+
+
     }
 
 }

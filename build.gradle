@@ -184,6 +184,9 @@ dependencies {
     compileOnly fg.deobf("io.redspace:irons_spellbooks:${irons_spells_version}")
     runtimeOnly fg.deobf("io.redspace:irons_spellbooks:${irons_spells_version}")
 
+    //additional attributes
+    implementation fg.deobf("curse.maven:additionalattributes-986624:6782138")
+
     // Geckolib
     implementation fg.deobf("curse.maven:geckolib-388172:6658942")
 

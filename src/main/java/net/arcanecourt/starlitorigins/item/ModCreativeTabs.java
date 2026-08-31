@@ -58,6 +58,9 @@ public class ModCreativeTabs {
                 output.accept(ModItems.MINER_STEW.get());
 
                 output.accept(ModItems.CINDER_INFUSED_COAL.get());
+                output.accept(ModItems.CHARRED_MEAT.get());
+                output.accept(ModItems.CHARRED_FISH.get());
+                output.accept(ModItems.CHARRED_VEGETABLE.get());
 
                 output.accept(ModBlocks.SILVER_ORE.get());
                 output.accept(ModItems.RAW_SILVER.get());

@@ -87,6 +87,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
                 );
 
+        this.tag(ModTags.Items.IS_SILVER)
+                .add(
+                        ModItems.SILVER_AXE.get(),
+                        ModItems.SILVER_PICKAXE.get(),
+                        ModItems.SILVER_SHOVEL.get(),
+                        ModItems.SILVER_HOE.get(),
+                        ModItems.SILVER_SWORD.get(),
+                        ModItems.SILVER_INGOT.get(),
+                        ModItems.RAW_SILVER.get()
+                );
     }
 
 }

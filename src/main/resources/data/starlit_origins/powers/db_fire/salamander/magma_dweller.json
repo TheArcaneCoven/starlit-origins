@@ -1,0 +1,20 @@
+{
+    "type": "origins:multiple",
+    "name": "Magma Dweller",
+    "description": "You can swim in lava with decent speed, and benefit from excellent lava vision.",
+    "lava_swimming_logic": {
+        "type": "origins:swimming",
+        "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:lava"
+            }
+        }
+    },
+    "lava_vision": {
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 30
+    }
+}

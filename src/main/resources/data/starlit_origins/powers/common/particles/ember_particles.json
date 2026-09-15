@@ -1,0 +1,7 @@
+{
+    "type": "origins:particle",
+    "particle": "irons_spellbooks:embers",
+    "frequency": 35,
+    "name": "Ember Particles",
+    "description": "Your skin continuously produces and sheds embers, that may fall around you."
+}

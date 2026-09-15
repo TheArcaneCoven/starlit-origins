@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "starlit_origins:db_fire/salamander/thermotherapy",
+        "starlit_origins:db_fire/salamander/magma_dweller",
+        "starlit_origins:db_fire/salamander/magmatic_leap",
+        "starlit_origins:db_fire/salamander/adapted_swimmer",
+        "starlit_origins:db_fire/salamander/ash_devourer"
+    ],
+    "icon": {
+        "item": "starlit_origins:fire_dragonborn_icon"
+    },
+    "order": 1,
+    "impact": 3,
+    "name": "Salamander",
+    "description": "Salamander fire dragonborns are strangely adapted to spending the most of their time in lava. Their uniqueness is pointed out by their ability to swim effortlessly in magma, as well as finding benefits from doing so."
+}

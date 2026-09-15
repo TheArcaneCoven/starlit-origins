@@ -1,0 +1,11 @@
+{
+    "name": "Nature magic affinity",
+    "description": "Your closer ties to Nature allow you to understand it better, making you benefit from a 10% nature spell power bonus.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Nature spell power increase",
+        "attribute": "irons_spellbooks:nature_spell_power",
+        "value": 0.1,
+        "operation": "multiply_base"
+    }
+}

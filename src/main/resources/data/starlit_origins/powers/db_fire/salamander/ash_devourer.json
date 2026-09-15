@@ -1,0 +1,22 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Ash Devourer",
+    "description": "Your environment typically tends to burn anything that falls in beyond recognition, and for this reason, salamanders grew a natural ability to process charred remains.\n\nYou know no such thing as raw food and cannot digest anything that isn't overcooked.",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": [
+                    {
+                        "tag": "starlit_origins:charred_food"
+                    }
+                ],
+                "inverted": true
+            }
+        ]
+    }
+}

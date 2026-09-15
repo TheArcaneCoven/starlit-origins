@@ -1,0 +1,11 @@
+{
+    "name": "Teleport",
+    "description": "You have the §dteleport§r spell from Iron's Spells & Spellbooks unlocked without the need of a spellbook or imbued weapon.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "void elf innate teleport",
+        "attribute": "additional_attributes:innate_spell/irons_spellbooks/teleport",
+        "value": 1,
+        "operation": "addition"
+    }
+}

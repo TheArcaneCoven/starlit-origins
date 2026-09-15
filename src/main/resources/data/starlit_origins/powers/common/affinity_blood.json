@@ -1,0 +1,11 @@
+{
+    "name": "Blood magic affinity",
+    "description": "You possess the gift of innate blood magic knowledge, having you benefit from a 10% blood spell power bonus.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Blood spell power increase",
+        "attribute": "irons_spellbooks:blood_spell_power",
+        "value": 0.1,
+        "operation": "multiply_base"
+    }
+}

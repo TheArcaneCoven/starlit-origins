@@ -1,0 +1,9 @@
+{
+    "hidden": true,
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "starlit_origins:db_fire/killcount",
+        "change": 1
+    }
+}

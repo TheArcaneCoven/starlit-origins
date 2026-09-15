@@ -1,0 +1,36 @@
+{
+    "name": "Magmatic Leap",
+    "description": "You can propel yourself forwards with great force while submerged in lava at the cost of some hunger, allowing spectacular accelerations or even the possibility to launch yourself out of the magmatic depths.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "z": 2,
+                "space": "local"
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 5
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "irons_spellbooks:spell.fire_arrow.cast",
+                "pitch": 0.6
+            }
+        ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "sprite_location": "starlit_origins:textures/gui/resource_bars/bars_2.png",
+        "bar_index": 0
+    },
+    "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:lava"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Hydrophobia",
+    "description": "Inheriting your ancestors' powers unfortunately also means dealing with the same weaknesses as them. Water and rain may not hurt you, but provoke immense discomfort, partly paralysing your muscles.\n\nStanding in the water or rain may cause your damage and mining speed to decrease by §c75%§r, compromising your ability to defend yourself. Your swimming speed is also decreased by §c50%§r compared to the average player.",
+    "type": "origins:multiple",
+    "water_damage_modifier": {
+        "type": "origins:modify_damage_dealt",
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:in_block_anywhere",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:water"
+                },
+                "comparison": ">=",
+                "compare_to": 1
+            }
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.75
+        }
+    },
+    "water_attribute_modifiers": {
+        "type": "origins:conditioned_attribute",
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:water"
+            },
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "modifiers": [
+            {
+                "name": "void elf mining speed",
+                "attribute": "attributeslib:mining_speed",
+                "value": -0.75,
+                "operation": "multiply_total"
+            },
+            {
+                "name": "void elf swimming_speed",
+                "attribute": "forge:swim_speed",
+                "value": -0.5,
+                "operation": "multiply_total"
+            }
+        ]
+    }
+}

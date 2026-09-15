@@ -1,0 +1,57 @@
+{
+    "hidden": true,
+    "type": "origins:resource",
+    "min": 0,
+    "max": 500,
+    "max_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "starlit_origins:fire_dragonborn",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "tellraw @s [{\"text\":\"Your countless battles strengthened you. Your \",\"color\":\"yellow\"},{\"text\":\"Flaming Strike\",\"color\":\"gold\"},{\"text\":\" spell upgraded and is now level 4!\",\"color\":\"yellow\"}]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "origin set @s origins:origin starlit_origins:fire_dragonborn_2"
+                        },
+                        {
+                            "type": "origins:change_resource",
+                            "resource": "starlit_origins:db_fire/killcount",
+                            "change": 0,
+                            "operation": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "starlit_origins:fire_dragonborn_2",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "tellraw @s [{\"text\":\"Your countless battles strengthened you. Your \",\"color\":\"yellow\"},{\"text\":\"Flaming Strike\",\"color\":\"gold\"},{\"text\":\" spell upgraded and is now level 5!\",\"color\":\"yellow\"}]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "origin set @s origins:origin starlit_origins:fire_dragonborn_3"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

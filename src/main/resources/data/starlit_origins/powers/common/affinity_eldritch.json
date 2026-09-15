@@ -1,0 +1,11 @@
+{
+    "name": "Eldritch Affinity",
+    "description": "Your ties with occult forces grant you 15% more eldritch spell power.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Eldritch spell power increase",
+        "attribute": "irons_spellbooks:eldritch_spell_power",
+        "value": 0.15,
+        "operation": "multiply_total"
+    }
+}

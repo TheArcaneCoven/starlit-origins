@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "origins:extra_reach",
+    "starlit_origins:void_elf/teleport",
+    "starlit_origins:void_elf/homeworld_comfort",
+    "starlit_origins:void_elf/size",
+    "origins:ender_particles",
+    "starlit_origins:void_elf/water_weakness",
+    "starlit_origins:void_elf/potion_aversion"
+  ],
+  "icon": {
+    "item": "starlit_origins:void_elf_icon"
+  },
+  "order": 3,
+  "impact": 2,
+  "name": "Void Elf",
+  "description": "As a near perfect combination of both human and enderman, void elves carry similar traits as many of the creatures that dwell in the End... but also some of their drawbacks.\n\nVoid elves are said to have been born eons ago, when mankind first discovered the End and shared a blooming civilisation with the once powerful Ancient Builders; but one day, a war known as the Great Destruction struck them all, reducing this harmony to ashes and changing what was left forever."
+}

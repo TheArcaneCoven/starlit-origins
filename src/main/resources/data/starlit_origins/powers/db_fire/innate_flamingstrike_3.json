@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "innate flaming strike",
+        "attribute": "additional_attributes:innate_spell/irons_spellbooks/flaming_strike",
+        "value": 5,
+        "operation": "addition"
+    },
+    "hidden": true
+}

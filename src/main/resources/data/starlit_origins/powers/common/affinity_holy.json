@@ -1,0 +1,11 @@
+{
+    "name": "Holy magic affinity",
+    "description": "Your studies of the energies meant to repulse the dark forces paid off; you benefit from a 10% holy spell power bonus.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Holy spell power increase",
+        "attribute": "irons_spellbooks:holy_spell_power",
+        "value": 0.1,
+        "operation": "multiply_base"
+    }
+}

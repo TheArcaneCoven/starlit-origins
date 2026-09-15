@@ -1,11 +1,13 @@
 package net.arcanecourt.starlitorigins.datagen;
 
+import io.redspace.ironsspellbooks.registries.BlockRegistry;
 import net.arcanecourt.starlitorigins.StarlitOrigins;
 import net.arcanecourt.starlitorigins.block.ModBlocks;
 import net.arcanecourt.starlitorigins.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -47,6 +49,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SILVER_ORE.get());
 
         this.tag(ModTags.Blocks.NEEDS_SILVER_TOOL);
+
+        this.tag(ModTags.Blocks.WARM_BLOCKS)
+                .add(Blocks.MAGMA_BLOCK,
+                        Blocks.GLOWSTONE,
+                        Blocks.CAMPFIRE,
+                        Blocks.SOUL_CAMPFIRE,
+                        Blocks.FIRE,
+                        Blocks.SOUL_FIRE,
+                        Blocks.LAVA,
+                        BlockRegistry.BRAZIER_FIRE.get(),
+                        BlockRegistry.BRAZIER_SOUL.get());
     }
 
 }

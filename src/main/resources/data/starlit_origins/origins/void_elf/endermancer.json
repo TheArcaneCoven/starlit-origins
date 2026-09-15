@@ -1,0 +1,12 @@
+{
+    "powers": [
+        "starlit_origins:void_elf/endermancer/ender_affinity"
+    ],
+    "icon": {
+        "item": "starlit_origins:void_elf_icon"
+    },
+    "order": 1,
+    "impact": 1,
+    "name": "Endermancer",
+    "description": "Endermancer void elves have a fearsome reputation, and some may say that a good reason hides behind it; these void elves spent their lives studying and practicing the art of exploiting the energies that's naturally part of them, rendering their ender magic deadlier."
+}

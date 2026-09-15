@@ -1,0 +1,23 @@
+{
+    "name": "Gold Rush",
+    "description": "When at Y level -15 or below, you gain a digging speed buff with the adrenaline of the prospect of finding rare metals.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -3,
+    "max_stacks": 1,
+    "duration_per_stack": 100,
+    "tick_rate": 20,
+    "effect": {
+        "effect": "minecraft:haste",
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": true
+    },
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:height",
+            "comparison": "<=",
+            "compare_to": -15
+        }
+    }
+}

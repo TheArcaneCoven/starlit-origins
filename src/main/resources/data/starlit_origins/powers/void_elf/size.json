@@ -1,0 +1,26 @@
+{
+    "name": "Shattered Realm's Heritage",
+    "description": "Just like most creatures of the End, your proportions are rather unnatural, making you taller than most species; you are approximately §e2.8 blocks tall§r.",
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1.5 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 1.4 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist set true @s"
+            }
+        ]
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scale reset @s"
+    }
+}

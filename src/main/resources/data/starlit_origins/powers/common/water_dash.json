@@ -1,0 +1,31 @@
+{
+    "name": "Water Dash",
+    "description": "You can dash when submerged in water, at the cost of some hunger.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "z": 2,
+                "space": "local"
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 3.5
+            }
+        ]
+    },
+    "cooldown": 100,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 4
+    },
+    "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:water"
+        }
+    }
+}

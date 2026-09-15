@@ -1,0 +1,21 @@
+{
+    "name": "Potion Aversion",
+    "description": "Your metabolism struggles to process water based products, causing potions to be less effective; positive potion effects last §c25%§r less time.",
+    "type": "origins:modify_status_effect_duration",
+    "status_effects": [
+        "minecraft:fire_resistance",
+        "minecraft:invisibility",
+        "minecraft:jump_boost",
+        "minecraft:night_vision",
+        "minecraft:regeneration",
+        "minecraft:resistance",
+        "minecraft:slow_falling",
+        "minecraft:speed",
+        "minecraft:strength",
+        "minecraft:water_breathing"
+    ],
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": -0.25
+    }
+}

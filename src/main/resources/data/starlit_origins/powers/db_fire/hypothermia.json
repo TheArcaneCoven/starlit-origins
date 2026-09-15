@@ -1,0 +1,77 @@
+{
+    "name": "Hypothermia",
+    "description": "Snowy biomes are for you a deadly environment. If you walk into biomes colder than you can handle, you find yourself greatly slowed down; at the end of a 1.30 minute timer, you may then go into full hypothermia, taking freezing damage over time. Damage can only be prevented if you are §ewithin 4 blocks §rof a heat source (campfire, magma blocks, fire, lava, etc.)",
+    "type": "origins:multiple",
+    "hypothermia_logic": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:temperature",
+                            "comparison": "<=",
+                            "compare_to": 0.05
+                        }
+                    },
+                    {
+                        "type": "origins:block_in_radius",
+                        "radius": 4,
+                        "shape": "sphere",
+                        "comparison": ">=",
+                        "compare_to": 1,
+                        "block_condition": {
+                            "type": "origins:in_tag",
+                            "tag": "starlit_origins:warm_blocks"
+                        },
+                        "inverted": true
+                    },
+                    {
+                        "type": "origins:resource",
+                        "resource": "starlit_origins:resources/hypothermia_timer",
+                        "comparison": "<",
+                        "compare_to": 90
+                    }
+                ]
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "starlit_origins:resources/hypothermia_timer",
+                "change": 1,
+                "operation": "add"
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "starlit_origins:resources/hypothermia_timer",
+                "change": -1,
+                "operation": "add"
+            }
+        },
+        "interval": 20
+    },
+    "slowed_in_cold_biomes": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -1,
+        "max_stacks": 1,
+        "duration_per_stack": 100,
+        "tick_rate": 60,
+        "effect": {
+            "effect": "irons_spellbooks:slowed",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true,
+            "amplifier": 1
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": "<=",
+                "compare_to": 0.05
+            }
+        }
+    }
+}

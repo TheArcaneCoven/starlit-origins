@@ -1,0 +1,23 @@
+{
+    "name": "Homeworld Comfort",
+    "description": "You are one with the energies that flow through the End, multiplying all healing received by §e25%§r and crit damage dealt by §e20%§r whenever you are in the dimension.",
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+        {
+            "name": "void elf end healing",
+            "attribute": "irons_lib:healing_received",
+            "value": 0.25,
+            "operation": "multiply_base"
+        },
+        {
+            "name": "void elf end damage",
+            "attribute": "irons_lib:crit_damage",
+            "value": 0.2,
+            "operation": "multiply_base"
+        }
+    ],
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_end"
+    }
+}

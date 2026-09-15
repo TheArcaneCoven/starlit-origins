@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "starlit_origins:void_elf/dragonslayer/dragon_hunter",
+    "starlit_origins:void_elf/dragonslayer/efficient_runner"
+  ],
+  "icon": {
+    "item": "starlit_origins:void_elf_icon"
+  },
+  "order": 1,
+  "impact": 1,
+  "name": "Dragonslayer",
+  "description": "Dragonslayers are void elves who trained to specialise their combat techniques against dragons and dragon-like creatures. This strangely specific elite is said to have been created to ensure the void elves' survival throughout the Great Destruction, a war waged by the Ender dragons looking to conquer the dimension a long time ago; it now mostly lives on as a part of void elves' traditions and culture."
+}

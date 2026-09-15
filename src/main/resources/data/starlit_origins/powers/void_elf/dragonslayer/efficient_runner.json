@@ -1,0 +1,14 @@
+{
+    "name": "Efficient Runner",
+    "description": "The combination of long term training and naturally long limbs rendered uneven terrain easier to navigate, letting you step up full blocks when sprinting.",
+    "type": "origins:conditioned_attribute",
+    "condition": {
+        "type": "origins:sprinting"
+    },
+    "modifier": {
+        "name": "dragonslayer sprinting step height",
+        "attribute": "forge:step_height_addition",
+        "value": 0.6,
+        "operation": "addition"
+    }
+}

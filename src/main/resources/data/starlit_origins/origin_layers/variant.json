@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "order": 1,
+  "origins": [
+    {
+      "condition": {
+        "type": "origins:origin",
+        "origin": "starlit_origins:void_elf",
+        "layer": "origins:origin"
+      },
+      "origins": [
+        "starlit_origins:void_elf/dragonslayer",
+        "starlit_origins:void_elf/endermancer"
+      ]
+    },
+    {
+      "condition": {
+        "type": "origins:origin",
+        "origin": "starlit_origins:fire_dragonborn",
+        "layer": "origins:origin"
+      },
+      "origins": [
+        "starlit_origins:fire_dragonborn/salamander"
+      ]
+    }
+  ],
+  "name": "variant"
+}

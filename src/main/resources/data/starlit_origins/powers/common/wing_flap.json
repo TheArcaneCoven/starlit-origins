@@ -1,0 +1,31 @@
+{
+    "name": "Flap!",
+    "description": "You can flap your wings with great strength, boosting yourself while flying at the cost of some saturation/hunger points.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "z": 2,
+                "space": "local"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.ender_dragon.flap"
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 3.5
+            }
+        ]
+    },
+    "cooldown": 40,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 4
+    },
+    "condition": {
+        "type": "origins:fall_flying"
+    }
+}

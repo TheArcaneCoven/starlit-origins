@@ -1,0 +1,19 @@
+{
+    "name": "Ender Affinity",
+    "description": "Your specialisation is focused on optimised use of the ender energies that your body naturally contains; for this reason, your teleporting ability has an additional level and you benefit from a §e20%§r ender spell power bonus.",
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "name": "endermancer better teleport",
+            "attribute": "additional_attributes:spell_type_teleport",
+            "value": 1,
+            "operation": "addition"
+        },
+        {
+            "name": "endermancer ender spell power",
+            "attribute": "irons_spellbooks:ender_spell_power",
+            "value": 0.20,
+            "operation": "multiply_total"
+        }
+    ]
+}

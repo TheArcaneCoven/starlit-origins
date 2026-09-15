@@ -1,0 +1,21 @@
+{
+    "powers": [
+        "origins:fire_immunity",
+        "starlit_origins:db_fire/thermodynamic",
+        "starlit_origins:db_fire/innate_flamingstrike_desc",
+        "starlit_origins:db_fire/innate_flamingstrike_1",
+        "starlit_origins:db_fire/killcount",
+        "starlit_origins:db_fire/register_kills",
+        "starlit_origins:common/particles/ember_particles",
+        "starlit_origins:db_fire/hypothermia",
+        "starlit_origins:resources/hypothermia_timer",
+        "starlit_origins:common/vulnerability_ice"
+    ],
+    "icon": {
+        "item": "starlit_origins:fire_dragonborn_icon"
+    },
+    "order": 3,
+    "impact": 2,
+    "name": "Fire Dragonborn",
+    "description": "Despite appearances, fire dragonborns are not true relatives of most draconic species that thrive in the Overworld; they are thought to be modern descendants of dragons that once originated from the Nether.\n\nMost fire dragonborns nowadays tend to live in regions of the world where the climate is warmer. High temperatures rhymes with comfort to them, and can even give them unexpected advantages."
+}

@@ -79,6 +79,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         Items.COOKED_SALMON
                 );
 
+        this.tag(ModTags.Items.CHARRED_FOOD)
+                .add(
+                        ModItems.CHARRED_FISH.get(),
+                        ModItems.CHARRED_MEAT.get(),
+                        ModItems.CHARRED_VEGETABLE.get()
+
+                );
 
     }
 

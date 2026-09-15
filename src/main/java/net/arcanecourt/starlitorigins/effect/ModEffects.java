@@ -26,6 +26,8 @@ public class ModEffects {
     public static final RegistryObject<MobEffect> VOIDKIN_VENOM = MOB_EFFECTS.register("voidkin_venom", () -> new ModMobEffects(MobEffectCategory.HARMFUL, 1936)
             .addAttributeModifier(AttributeRegistry.ELDRITCH_MAGIC_RESIST.get(), "f332885e-ddcc-4414-8dd5-48e080c5d9de", -0.15f, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
+    public static final RegistryObject<MobEffect> ELECTRIFIED = MOB_EFFECTS.register("electrified", () -> new ElectrifiedEffect(MobEffectCategory.HARMFUL, 37150190));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

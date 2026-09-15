@@ -1,0 +1,14 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": 0.5,
+        "name": "increased damage while on fire"
+    },
+    "condition": {
+        "type": "origins:on_fire"
+    },
+    "name": "Thermodynamic",
+    "description": "While on fire, your body absorbs and channels the rising temperature to make your strength more devastating; your melee attacks will deal§e 50%§r more damage. The value scales with your currently held weapon."
+}

@@ -1,13 +1,27 @@
 {
     "type": "origins:conditioned_attribute",
     "name": "Adapted Swimmer",
-    "description": "Due to having spent the majority of your life travelling under the magma's surface, you are slow and clumsy on land, decreasing your movement speed by §c40%§r.",
-    "modifier": {
-        "name": "salamander land speed",
-        "attribute": "minecraft:generic.movement_speed",
-        "value": -0.4,
-        "operation": "multiply_total"
-    },
+    "description": "Due to having spent the majority of your life travelling under the magma's surface, you are slow and clumsy on land, decreasing your movement speed by §c50%§r; However, the residual lava on your skin hardens from exposure to air, increasing your armor and armor toughness by §e3§r.",
+    "modifiers": [
+        {
+            "name": "salamander land speed",
+            "attribute": "minecraft:generic.movement_speed",
+            "value": -0.5,
+            "operation": "multiply_total"
+        },
+        {
+            "name": "salamander land armor",
+            "attribute": "minecraft:generic.armor",
+            "value": 3,
+            "operation": "addition"
+        },
+        {
+            "name": "salamander land armor toughness",
+            "attribute": "minecraft:generic.armor_toughness",
+            "value": 3,
+            "operation": "addition"
+        }
+    ],
     "condition": {
         "type": "origins:in_block",
         "block_condition": {

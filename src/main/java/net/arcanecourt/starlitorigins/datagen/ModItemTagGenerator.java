@@ -24,6 +24,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.IS_SCULK_FOOD)
                 .add(ModItems.FUNGAL_BROCHETTE.get(),
                         ModItems.RAW_SENSOR_TENDRIL.get(),
+                        ModItems.ELDRITCH_STEW.get(),
                         ModItems.COOKED_SENSOR_TENDRIL.get(),
                         ModItems.OVERTAKEN_BERRY_MIX.get(),
                         ModItems.TIMELESS_ALE.get(),
@@ -54,7 +55,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         Items.BAKED_POTATO,
                         Items.BEETROOT,
                         Items.DRIED_KELP,
-                        Items.CARROT,
                         Items.CRIMSON_FUNGUS,
                         Items.WARPED_FUNGUS,
                         vectorwing.farmersdelight.common.registry.ModItems.CABBAGE.get(),

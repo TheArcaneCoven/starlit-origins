@@ -1,6 +1,6 @@
 {
     "name": "Dragon Hunter",
-    "description": "Your specialisation allows non-ranged attacks to deal §e15%§r more damage to dragons and dragon-like creatures.\n\nThis includes entities such as the ender dragon, as well as players with a dragonborn or mineral drake origin.",
+    "description": "Your specialisation allows non-ranged attacks to deal §e20%§r more damage to dragons and dragon-like creatures.\n\nThis includes entities such as the ender dragon, as well as players with a dragonborn or mineral drake origin.",
     "type": "origins:modify_damage_dealt",
     "damage_condition": {
         "type": "origins:projectile",
@@ -17,15 +17,15 @@
                 },
                 {
                     "type": "origins:scoreboard",
-                    "objective": "dragonlike",
-                    "comparison": "==",
+                    "objective": "dragonoid",
+                    "comparison": ">=",
                     "compare_to": 1
                 }
             ]
         }
     },
     "modifier": {
-        "value": 0.15,
+        "value": 0.2,
         "operation": "multiply_total"
     }
 }

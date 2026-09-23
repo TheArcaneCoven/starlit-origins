@@ -1,0 +1,49 @@
+{
+    "name": "Cold Shock",
+    "description": "You cannot achieve flight while you are under the effects of hypothermia or affected with the chilled effect.\n\nTaking cryomancy damage has §c50%§r chance to disturb your flight, causing you to plummet to the ground.",
+    "type": "origins:multiple",
+    "flight_conditions": {
+        "type": "origins:prevent_elytra_flight",
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "starlit_origins:resources/hypothermia_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "irons_spellbooks:chilled"
+                }
+            ]
+        }
+    },
+    "cryomancy_induces_crashing": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:in_tag",
+            "tag": "irons_spellbooks:ice_magic"
+        },
+        "entity_action": {
+            "type": "origins:chance",
+            "chance": 0.5,
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:add_velocity",
+                        "y": -1
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "starlit_origins:resources/hypothermia_timer",
+                        "change": 1,
+                        "operation": "add"
+                    }
+                ]
+            }
+        }
+    }
+}

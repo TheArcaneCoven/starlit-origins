@@ -1,0 +1,58 @@
+{
+    "name": "Hoarding Instincts",
+    "description": "You are compelled to accumulate gold and keep it by your side at all costs; adrenaline rushes through your veins at the sight of potential thiefs.\n\nWhen standing within 8 blocks of at least 5 gold blocks, you gain §e3§r additional armor and armor toughness points.\n\nAt all times, your aggression is heightened towards most beings known for their liking for gold, causing a §e20%§r damage increase against dwarves, piglins and other desert soarers.",
+    "type": "origins:multiple",
+    "gold_proximity_buff": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "name": "gold proximity armor",
+                "attribute": "minecraft:generic.armor",
+                "value": 3,
+                "operation": "addition"
+            },
+            {
+                "name": "gold proximity armor toughness",
+                "attribute": "minecraft:generic.armor_toughness",
+                "value": 3,
+                "operation": "addition"
+            }
+        ],
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:gold_block"
+            },
+            "radius": 8,
+            "shape": "cube",
+            "comparison": ">=",
+            "compare_to": 5
+        }
+    },
+    "targeted_aggression": {
+        "type": "origins:modify_damage_dealt",
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "starlit_origins:gold_hoarders"
+                    },
+                    {
+                        "type": "origins:scoreboard",
+                        "objective": "gold_hoarder",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    }
+                ]
+            }
+        },
+        "modifier": {
+            "value": 0.2,
+            "operation": "multiply_total"
+        }
+    }
+}

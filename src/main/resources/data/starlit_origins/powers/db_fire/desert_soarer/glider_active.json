@@ -1,0 +1,31 @@
+{
+    "type": "origins:modify_velocity",
+    "axes": [
+        "y"
+    ],
+    "modifier": {
+        "operation": "set_total",
+        "value": 0
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": ">=",
+                    "compare_to": 2
+                }
+            },
+            {
+                "type": "origins:power_active",
+                "power": "starlit_origins:db_fire/desert_soarer/glider"
+            },
+            {
+                "type": "origins:fall_flying"
+            }
+        ]
+    },
+    "hidden": true
+}

@@ -60,6 +60,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         Blocks.LAVA,
                         BlockRegistry.BRAZIER_FIRE.get(),
                         BlockRegistry.BRAZIER_SOUL.get());
+
+        this.tag(ModTags.Blocks.GOLDEN_BLOCKS)
+                .add(Blocks.GOLD_BLOCK,
+                        Blocks.RAW_GOLD_BLOCK);
     }
+
+
 
 }

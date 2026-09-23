@@ -14,6 +14,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_SILVER_TOOL = tag("needs_silver_tool");
         public static final TagKey<Block> WARM_BLOCKS = tag("warm_blocks");
+        public static final TagKey<Block> GOLDEN_BLOCKS = tag("golden_blocks");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(StarlitOrigins.MOD_ID, name));

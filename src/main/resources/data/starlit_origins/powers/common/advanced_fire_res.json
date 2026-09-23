@@ -1,0 +1,9 @@
+{
+    "name": "Thermophile",
+    "description": "You are immune to fire damage and lava damage.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:is_fire"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scoreboard objectives add dragonoid dummy \"dragonoid\""
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scoreboard players set @s dragonoid 1"
+            }
+        ]
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scoreboard players reset @s dragonoid"
+    },
+    "execute_chosen_when_orb": true,
+    "name": "Dragonoid",
+    "description": "You are marked as a dragonoid creature."
+}

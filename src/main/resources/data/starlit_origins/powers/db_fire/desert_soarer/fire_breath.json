@@ -1,0 +1,41 @@
+{
+    "name": "Fire Breath",
+    "description": "Whether you are on land or in the skies, hold your secondary key to use a long-range fire breathing ability. Upon being aimed at blocks, the attack briefly leaves fire fields in your wake, damaging anything getting caught in the flames.\n§e(Range: 16 blocks)\n(Damage: 5 - 6 per second)§r",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": true
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "starlit_origins:resources/breath_charge_fire",
+                "change": -1,
+                "operation": "add"
+            },
+            {
+                "type": "origins:raycast",
+                "distance": 16,
+                "block": true,
+                "entity": false,
+                "shape_type": "collider",
+                "command_at_hit": "summon irons_spellbooks:fire_field ~ ~ ~ {Damage: 5.0f, Radius:1.5f, Duration:100}",
+                "command_along_ray": "particle irons_spellbooks:dragon_fire",
+                "command_step": 0.5
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.blaze.shoot",
+                "pitch": 0.5
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:resource",
+        "resource": "starlit_origins:resources/breath_charge_fire",
+        "comparison": ">",
+        "compare_to": 0
+    }
+}

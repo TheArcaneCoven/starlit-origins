@@ -1,0 +1,23 @@
+{
+    "powers": [
+        "origins:elytra",
+        "starlit_origins:db_fire/desert_soarer/wing_flap",
+        "starlit_origins:db_fire/desert_soarer/glider",
+        "starlit_origins:db_fire/desert_soarer/glider_active",
+        "starlit_origins:resources/breath_charge_fire",
+        "starlit_origins:db_fire/desert_soarer/fire_breath",
+        "starlit_origins:db_fire/desert_soarer/fire_breath_recover",
+        "starlit_origins:db_fire/desert_soarer/hoarding_instincts",
+        "starlit_origins:common/scoreboards/gold_hoarder",
+        "starlit_origins:db_fire/desert_soarer/cold_shock",
+        "origins:more_kinetic_damage",
+        "origins:carnivore"
+    ],
+    "icon": {
+        "item": "starlit_origins:fire_dragonborn_icon"
+    },
+    "order": 1,
+    "impact": 2,
+    "name": "Desert Soarer",
+    "description": "Desert Soarer fire dragonborns are the only variant whose wings are powerful enough to allow reaching the skies; however, they exhaust quickly unless carried by hot air currents.\n\nDesert Soarers are thus often seen thriving in warm biomes, where they are known for their greed, their strange obsession for hoarding gold and their strong tendency for agression and turf wars."
+}

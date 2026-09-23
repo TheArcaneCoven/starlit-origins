@@ -20,7 +20,8 @@
         "layer": "origins:origin"
       },
       "origins": [
-        "starlit_origins:fire_dragonborn/salamander"
+        "starlit_origins:fire_dragonborn/salamander",
+        "starlit_origins:fire_dragonborn/desert_soarer"
       ]
     }
   ],

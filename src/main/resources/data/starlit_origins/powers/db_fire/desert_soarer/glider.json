@@ -1,0 +1,10 @@
+{
+    "name": "Glider",
+    "description": "You can take advantage of warm air currents to keep yourself in the air without exhausting yourself; when in any warm biome, press your sneaking keybind while flying to activate gliding mode, locking your current y level and allowing you to glide indefinitely.",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "retain_state": false,
+    "key": {
+        "key": "key.sneak"
+    }
+}

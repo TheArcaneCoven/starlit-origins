@@ -1,6 +1,9 @@
 {
     "powers": [
-        "starlit_origins:void_elf/endermancer/ender_affinity"
+        "starlit_origins:void_elf/endermancer/ender_affinity",
+        "starlit_origins:void_elf/endermancer/water_damage",
+        "starlit_origins:resources/forcefield_timer",
+        "starlit_origins:void_elf/endermancer/forcefield"
     ],
     "icon": {
         "item": "starlit_origins:void_elf_icon"

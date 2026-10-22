@@ -59,7 +59,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.VOIDKIN_ICON);
         simpleItem(ModItems.ICE_DRAGONBORN_ICON);
-        simpleItem(ModItems.IGNITED_ICON);
+        simpleItem(ModItems.CINDERLING_ICON);
         simpleItem(ModItems.FIRE_DRAGONBORN_ICON);
         simpleItem(ModItems.NECRODARIAN_ICON);
         simpleItem(ModItems.FOREST_DRAGONBORN_ICON);

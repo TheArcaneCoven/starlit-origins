@@ -8,8 +8,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-import javax.swing.text.html.HTML;
-
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_SILVER_TOOL = tag("needs_silver_tool");
@@ -27,6 +25,8 @@ public class ModTags {
         public static final TagKey<Item> IS_SCULK_FOOD = tag("is_sculk_food");
         public static final TagKey<Item> IS_MINERAL_FOOD = tag("is_mineral_food");
         public static final TagKey<Item> POWDERED_ORES = tag("powdered_ores");
+
+        public static final TagKey<Item> IS_FLEXITARIAN_FOOD = tag("is_flexitarian_food");
 
         public static final TagKey<Item> CHARREABLE_VEGETABLES = tag("charreable_vegetables");
         public static final TagKey<Item> CHARREABLE_MEATS = tag("charreable_meats");

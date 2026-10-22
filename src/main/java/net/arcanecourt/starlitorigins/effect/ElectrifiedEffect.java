@@ -18,7 +18,7 @@ public class ElectrifiedEffect extends ModMobEffects implements ISyncedMobEffect
 
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-        if (pLivingEntity.isInWater()) {
+        if (pLivingEntity.isInWaterOrRain()) {
             pLivingEntity.level().playSound((Player) null, pLivingEntity.blockPosition(), SoundRegistry.CHAIN_LIGHTNING_CHAIN.get(),  SoundSource.MASTER, 1.0F, 1.0F);
             pLivingEntity.hurt(pLivingEntity.damageSources().magic(), (6 * (pAmplifier + 1)));
             pLivingEntity.removeEffect(this);

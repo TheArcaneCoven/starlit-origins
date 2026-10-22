@@ -63,7 +63,7 @@ public class ModItems {
     public static final RegistryObject<Item> WATER_DRAGONBORN_ICON = ITEMS.register("water_dragonborn_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> WEREWOLF_ICON = ITEMS.register("werewolf_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NECRODARIAN_ICON = ITEMS.register("necrodarian_icon", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IGNITED_ICON = ITEMS.register("ignited_icon", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CINDERLING_ICON = ITEMS.register("cinderling_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> VAMPIRE_ICON = ITEMS.register("vampire_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> VOIDKIN_ICON = ITEMS.register("voidkin_icon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOBLIN_ICON = ITEMS.register("goblin_icon", () -> new Item(new Item.Properties()));

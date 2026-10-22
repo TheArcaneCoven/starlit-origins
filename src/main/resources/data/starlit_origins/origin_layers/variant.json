@@ -1,6 +1,6 @@
 {
   "replace": false,
-  "order": 1,
+  "order": 2,
   "origins": [
     {
       "condition": {
@@ -10,7 +10,8 @@
       },
       "origins": [
         "starlit_origins:void_elf/dragonslayer",
-        "starlit_origins:void_elf/endermancer"
+        "starlit_origins:void_elf/endermancer",
+        "starlit_origins:void_elf/end_sentinel"
       ]
     },
     {

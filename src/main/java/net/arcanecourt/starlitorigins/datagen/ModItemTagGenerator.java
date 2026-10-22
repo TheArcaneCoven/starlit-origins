@@ -11,6 +11,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
+import vectorwing.farmersdelight.common.tag.CommonTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -96,6 +97,70 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.SILVER_SWORD.get(),
                         ModItems.SILVER_INGOT.get(),
                         ModItems.RAW_SILVER.get()
+                );
+
+        this.tag(ModTags.Items.IS_FLEXITARIAN_FOOD)
+                .add(
+                        Items.APPLE,
+                        Items.GOLDEN_APPLE,
+                        Items.ENCHANTED_GOLDEN_APPLE,
+                        Items.MELON_SLICE,
+                        Items.GLOW_BERRIES,
+                        Items.CHORUS_FRUIT,
+                        Items.CARROT,
+                        Items.GOLDEN_CARROT,
+                        Items.POTATO,
+                        Items.BAKED_POTATO,
+                        Items.POISONOUS_POTATO,
+                        Items.BEETROOT,
+                        Items.DRIED_KELP,
+                        Items.BREAD,
+                        Items.COOKIE,
+                        Items.MUSHROOM_STEW,
+                        Items.BEETROOT_SOUP,
+                        Items.SUSPICIOUS_STEW,
+                        vectorwing.farmersdelight.common.registry.ModItems.CABBAGE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.TOMATO.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.ONION.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.TOMATO_SAUCE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.RAW_PASTA.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.CABBAGE_LEAF.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.CAKE_SLICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.APPLE_PIE_SLICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.SWEET_BERRY_CHEESECAKE_SLICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.CHOCOLATE_PIE_SLICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_PIE_SLICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.SWEET_BERRY_COOKIE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.HONEY_COOKIE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.MELON_POPSICLE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.MELON_JUICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.GLOW_BERRY_CUSTARD.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.FRUIT_SALAD.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.MIXED_SALAD.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.NETHER_SALAD.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.HOT_COCOA.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.APPLE_CIDER.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.CABBAGE_ROLLS.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.KELP_ROLL.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.KELP_ROLL_SLICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.COOKED_RICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.VEGETABLE_SOUP.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.FRIED_RICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SOUP.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.BAKED_COD_STEW.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.NOODLE_SOUP.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.ONION_SOUP.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.MUSHROOM_RICE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.VEGETABLE_NOODLES.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.RATATOUILLE.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.SQUID_INK_PASTA.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.STUFFED_PUMPKIN.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.GLEAMING_SALAD.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.FRIED_EGG.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.EGG_SANDWICH.get(),
+                        vectorwing.farmersdelight.common.registry.ModItems.STUFFED_POTATO.get()
                 );
     }
 

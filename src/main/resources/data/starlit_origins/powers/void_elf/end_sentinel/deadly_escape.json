@@ -1,0 +1,76 @@
+{
+    "name": "Deadly Escape",
+    "description": "Pressing your primary key will cause you to let out a screech, at the end of which you will strike the ground violently, teleport away and benefit from brief invisibility and absorption.\n\nYour teleportation follows your cursor's direction and entities caught in the shockwave will be launched upwards, afflicted by slowness II for 8 seconds.\n(teleportation radius: 24 blocks)\n(Shockwave radius: 4 blocks)\n(Cooldown: 1:30min)",
+    "type": "origins:active_self",
+    "cooldown": 1800,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "starlit_origins:textures/gui/resource_bars/bars_2.png",
+        "bar_index": 2,
+        "icon_index": 2
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "playsound starlit_origins:entity.player.sentinel_teleport master @a ~ ~ ~ 1 1"
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 15,
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:area_of_effect",
+                            "radius": 4,
+                            "shape": "sphere",
+                            "bientity_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:add_velocity",
+                                            "y": 1.5
+                                        },
+                                        {
+                                            "type": "origins:apply_effect",
+                                            "effect": {
+                                                "effect": "minecraft:slowness",
+                                                "duration": 160,
+                                                "amplifier": 1,
+                                                "show_particles": false
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "cast @s teleport 9"
+                        },
+                        {
+                            "type": "origins:apply_effect",
+                            "effects": [
+                                {
+                                    "effect": "irons_spellbooks:true_invisibility",
+                                    "duration": 100,
+                                    "show_particles": false
+                                },
+                                {
+                                    "effect": "minecraft:absorption",
+                                    "duration": 300,
+                                    "show_particles": false,
+                                    "amplifier": 2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

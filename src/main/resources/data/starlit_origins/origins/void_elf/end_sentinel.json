@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "starlit_origins:void_elf/end_sentinel/sentinel_resilience",
+    "starlit_origins:void_elf/end_sentinel/deadly_escape",
+    "starlit_origins:common/diets/flexitarian",
+    "starlit_origins:void_elf/end_sentinel/speed_decrease"
+  ],
+  "icon": {
+    "item": "starlit_origins:void_elf_icon"
+  },
+  "order": 1,
+  "impact": 1,
+  "name": "End Sentinel",
+  "description": "End Sentinels are said to be the descendants of powerful creatures who once called themselves guardians of the Ancient Builders. They may have a preference for peaceful ways, yet their resilience and their natural strength make them dreadful opponents if they decide to step into battle."
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Sentinel's Resilience",
+    "description": "You are naturally capable of enduring more damage than the other void elf variants thanks to your tougher body, starting your adventure with 8 additional health points and 4 armor points.",
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "name": "end sentinel health increase",
+            "attribute": "minecraft:generic.max_health",
+            "value": 8,
+            "operation": "addition"
+        },
+        {
+            "name": "end sentinel armor",
+            "attribute": "minecraft:generic.armor",
+            "value": 4,
+            "operation": "addition"
+        }
+    ]
+}

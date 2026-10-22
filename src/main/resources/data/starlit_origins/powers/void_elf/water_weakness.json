@@ -35,7 +35,7 @@
         "modifiers": [
             {
                 "name": "void elf mining speed",
-                "attribute": "attributeslib:mining_speed",
+                "attribute": "irons_lib:mining_speed",
                 "value": -0.75,
                 "operation": "multiply_total"
             },

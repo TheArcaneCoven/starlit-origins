@@ -1,7 +1,10 @@
 {
   "powers": [
     "starlit_origins:void_elf/dragonslayer/dragon_hunter",
-    "starlit_origins:void_elf/dragonslayer/efficient_runner"
+    "starlit_origins:void_elf/dragonslayer/efficient_runner",
+    "starlit_origins:void_elf/dragonslayer/slayer_mark",
+    "starlit_origins:void_elf/dragonslayer/slayer_ambush",
+    "starlit_origins:void_elf/dragonslayer/vulnerability_evocation"
   ],
   "icon": {
     "item": "starlit_origins:void_elf_icon"

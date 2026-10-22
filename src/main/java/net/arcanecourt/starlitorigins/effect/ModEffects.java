@@ -28,6 +28,8 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> ELECTRIFIED = MOB_EFFECTS.register("electrified", () -> new ElectrifiedEffect(MobEffectCategory.HARMFUL, 37150190));
 
+    public static final RegistryObject<MobEffect> SLAYER_MARK = MOB_EFFECTS.register("slayer_mark", () -> new ModMobEffects(MobEffectCategory.HARMFUL, 22839245));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

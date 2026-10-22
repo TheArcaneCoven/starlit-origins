@@ -1,0 +1,18 @@
+{
+  "entity.player.dragonslayer_echo": {
+    "sounds": [
+      {
+        "name": "starlit_origins:entity/player/dragonslayer_echo"
+      }
+    ],
+    "subtitle": "sound.starlit_origins.entity.player.dragonslayer_echo"
+  },
+  "entity.player.sentinel_teleport": {
+    "sounds": [
+      {
+        "name": "starlit_origins:entity/player/sentinel_teleport"
+      }
+    ],
+    "subtitle": "sound.starlit_origins.entity.player.sentinel_teleport"
+  }
+}

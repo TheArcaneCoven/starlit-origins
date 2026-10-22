@@ -1,0 +1,20 @@
+{
+    "name": "Flexitarian",
+    "description": "You are mostly adapted to eating plants, and cannot eat foods strongly based on meat.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "starlit_origins:is_flexitarian_food"
+                },
+                "inverted": true
+            }
+        ]
+    }
+}

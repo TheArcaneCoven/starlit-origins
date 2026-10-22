@@ -9,7 +9,8 @@
         "starlit_origins:common/particles/ember_particles",
         "starlit_origins:db_fire/hypothermia",
         "starlit_origins:resources/hypothermia_timer",
-        "starlit_origins:common/vulnerability_ice"
+        "starlit_origins:common/vulnerability_ice",
+        "starlit_origins:common/scoreboards/dragonoid"
     ],
     "icon": {
         "item": "starlit_origins:fire_dragonborn_icon"

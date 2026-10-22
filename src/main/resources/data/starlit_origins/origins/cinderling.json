@@ -1,0 +1,22 @@
+{
+    "name": "Cinderling",
+    "description": "Once part of other species, Cinderlings got assimilated by the hellish forces of the Nether. Now reborn to carry the will of a divine leader who was thought to have fallen long ago, most Cinderlings dedicate their lives to restoring the greatness of the once forgotten Legion.",
+    "impact": 3,
+    "icon": {
+        "item": "starlit_origins:cinderling_icon"
+    },
+    "powers": [
+        "starlit_origins:cinderling/fire_resistance",
+        "starlit_origins:resources/simple_boolean",
+        "starlit_origins:cinderling/dash",
+        "starlit_origins:cinderling/dash_prevents_flight",
+        "starlit_origins:cinderling/cinder_essence_drop",
+        "starlit_origins:cinderling/health",
+        "starlit_origins:cinderling/size",
+        "starlit_origins:cinderling/particles",
+        "starlit_origins:common/vulnerability_lightning",
+        "starlit_origins:common/heavy",
+        "starlit_origins:resources/vitavore_soul_storage",
+        "starlit_origins:common/diets/vitavore"
+    ]
+}

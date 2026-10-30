@@ -8,6 +8,8 @@
     "powers": [
         "starlit_origins:cinderling/fire_resistance",
         "starlit_origins:resources/simple_boolean",
+        "starlit_origins:cinderling/killcount",
+        "starlit_origins:cinderling/register_kills",
         "starlit_origins:cinderling/dash",
         "starlit_origins:cinderling/dash_prevents_flight",
         "starlit_origins:cinderling/cinder_essence_drop",

@@ -33,6 +33,8 @@ public class ModTags {
         public static final TagKey<Item> CHARREABLE_FISH = tag("charreable_fish");
         public static final TagKey<Item> CHARRED_FOOD = tag("charred_food");
 
+        public static final TagKey<Item> MAGE_ARMORS = tag("mage_armors");
+
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(StarlitOrigins.MOD_ID, name));
         }

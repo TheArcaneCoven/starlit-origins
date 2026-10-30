@@ -1,5 +1,6 @@
 package net.arcanecourt.starlitorigins.datagen;
 
+import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.arcanecourt.starlitorigins.StarlitOrigins;
 import net.arcanecourt.starlitorigins.item.ModItems;
 import net.arcanecourt.starlitorigins.util.ModTags;
@@ -162,6 +163,72 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         vectorwing.farmersdelight.common.registry.ModItems.EGG_SANDWICH.get(),
                         vectorwing.farmersdelight.common.registry.ModItems.STUFFED_POTATO.get()
                 );
+
+                this.tag(ModTags.Items.MAGE_ARMORS)
+                        .add(
+                                Items.CHAINMAIL_HELMET,
+                                Items.CHAINMAIL_CHESTPLATE,
+                                Items.CHAINMAIL_LEGGINGS,
+                                Items.CHAINMAIL_BOOTS,
+
+                                Items.IRON_HELMET,
+                                Items.IRON_CHESTPLATE,
+                                Items.IRON_BOOTS,
+                                Items.IRON_LEGGINGS,
+
+                                Items.LEATHER_HELMET,
+                                Items.LEATHER_CHESTPLATE,
+                                Items.LEATHER_BOOTS,
+                                Items.LEATHER_LEGGINGS,
+
+                                Items.GOLDEN_HELMET,
+                                Items.GOLDEN_CHESTPLATE,
+                                Items.GOLDEN_LEGGINGS,
+                                Items.GOLDEN_BOOTS,
+
+                                ItemRegistry.ARCHEVOKER_HELMET.get(),
+                                ItemRegistry.ARCHEVOKER_CHESTPLATE.get(),
+                                ItemRegistry.ARCHEVOKER_LEGGINGS.get(),
+                                ItemRegistry.ARCHEVOKER_BOOTS.get(),
+
+                                ItemRegistry.CULTIST_HELMET.get(),
+                                ItemRegistry.CULTIST_CHESTPLATE.get(),
+                                ItemRegistry.CULTIST_LEGGINGS.get(),
+                                ItemRegistry.CULTIST_BOOTS.get(),
+
+                                ItemRegistry.PRIEST_HELMET.get(),
+                                ItemRegistry.PRIEST_CHESTPLATE.get(),
+                                ItemRegistry.PRIEST_LEGGINGS.get(),
+                                ItemRegistry.PRIEST_BOOTS.get(),
+                                ItemRegistry.PALADIN_CHESTPLATE.get(),
+
+                                ItemRegistry.ELECTROMANCER_HELMET.get(),
+                                ItemRegistry.ELECTROMANCER_CHESTPLATE.get(),
+                                ItemRegistry.ELECTROMANCER_LEGGINGS.get(),
+                                ItemRegistry.ELECTROMANCER_BOOTS.get(),
+                                ItemRegistry.BOOTS_OF_SPEED.get(),
+
+                                ItemRegistry.PYROMANCER_HELMET.get(),
+                                ItemRegistry.PYROMANCER_CHESTPLATE.get(),
+                                ItemRegistry.PYROMANCER_LEGGINGS.get(),
+                                ItemRegistry.PYROMANCER_BOOTS.get(),
+                                ItemRegistry.INFERNAL_SORCERER_CHESTPLATE.get(),
+
+                                ItemRegistry.PLAGUED_HELMET.get(),
+                                ItemRegistry.PLAGUED_CHESTPLATE.get(),
+                                ItemRegistry.PLAGUED_LEGGINGS.get(),
+                                ItemRegistry.PLAGUED_BOOTS.get(),
+
+                                ItemRegistry.CRYOMANCER_HELMET.get(),
+                                ItemRegistry.CRYOMANCER_CHESTPLATE.get(),
+                                ItemRegistry.CRYOMANCER_LEGGINGS.get(),
+                                ItemRegistry.CRYOMANCER_BOOTS.get(),
+
+                                ItemRegistry.SHADOWWALKER_HELMET.get(),
+                                ItemRegistry.SHADOWWALKER_CHESTPLATE.get(),
+                                ItemRegistry.SHADOWWALKER_LEGGINGS.get(),
+                                ItemRegistry.SHADOWWALKER_BOOTS.get()
+                        );
     }
 
 }

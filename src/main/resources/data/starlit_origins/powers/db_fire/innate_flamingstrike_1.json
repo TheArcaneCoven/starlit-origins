@@ -6,5 +6,6 @@
         "value": 3,
         "operation": "addition"
     },
-    "hidden": true
+    "name": "Blazing Strikes",
+    "description": "You have the flaming strike spell unlocked and don't need a spellbook or scroll to cast it. On your 500th entity killed, this power will upgrade.\n(Current level: 3)"
 }

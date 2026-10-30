@@ -2,7 +2,6 @@
     "powers": [
         "origins:fire_immunity",
         "starlit_origins:db_fire/thermodynamic",
-        "starlit_origins:db_fire/innate_flamingstrike_desc",
         "starlit_origins:db_fire/innate_flamingstrike_2",
         "starlit_origins:db_fire/killcount",
         "starlit_origins:db_fire/register_kills",

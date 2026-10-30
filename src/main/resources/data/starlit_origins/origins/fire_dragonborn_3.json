@@ -2,7 +2,6 @@
     "powers": [
         "origins:fire_immunity",
         "starlit_origins:db_fire/thermodynamic",
-        "starlit_origins:db_fire/innate_flamingstrike_desc",
         "starlit_origins:db_fire/innate_flamingstrike_3",
         "starlit_origins:common/particles/ember_particles",
         "starlit_origins:db_fire/hypothermia",
